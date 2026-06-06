@@ -540,7 +540,7 @@ export const articles: Article[] = [
       zh: "探索古老的针灸疗愈艺术，它通过对经络穴位的精确刺激来平衡人体的生命能量。"
     },
     category: { en: "Traditional Medicine", zh: "传统医药" },
-    bannerImage: "https://images.unsplash.com/photo-1512428813834-c702c7702b78?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/AcupunctureandMoxibustion.webp",
     publishDate: "2023-12-15",
     readTime: "7 min read",
     sections: [
@@ -820,7 +820,7 @@ export const articles: Article[] = [
       zh: "探索龙泉的古窑，制瓷大师们在这里巧妙地运用泥土、草灰与烈火，创造出完美模拟宁静玉石之美的绝世瓷器。"
     },
     category: { en: "Traditional Crafts", zh: "传统手工艺" },
-    bannerImage: "https://images.unsplash.com/photo-1549479354-94676b1b49f9?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/CeladonMakingTechniqueofLongquan.webp",
     publishDate: "2024-01-20",
     readTime: "7 min read",
     sections: [
