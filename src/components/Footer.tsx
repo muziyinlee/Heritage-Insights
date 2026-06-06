@@ -21,6 +21,10 @@ export default function Footer() {
         </div>
 
         <nav className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-slate-600">
+          <Link to="/contact" className="hover:text-slate-900 transition-colors text-center">
+            <span className="block">Contact Us</span>
+            <span className="text-[10px] font-serif text-slate-400">联系我们</span>
+          </Link>
           <Link to="/privacy" className="hover:text-slate-900 transition-colors text-center">
             <span className="block">Privacy Policy</span>
             <span className="text-[10px] font-serif text-slate-400">隐私政策</span>

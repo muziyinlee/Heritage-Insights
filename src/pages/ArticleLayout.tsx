@@ -2,6 +2,8 @@ import React, { useEffect } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ArrowLeft } from 'lucide-react';
+import Zoom from 'react-medium-image-zoom';
+import 'react-medium-image-zoom/dist/styles.css';
 import { articles } from '../data/articles';
 import AdPlaceholder from '../components/AdPlaceholder';
 
@@ -51,7 +53,9 @@ export default function ArticleLayout() {
 
         {/* Banner Image */}
         <div className="rounded-2xl overflow-hidden aspect-[21/9] mb-12 shadow-sm border border-slate-100">
-          <img src={article.bannerImage} alt={article.title.en} className="w-full h-full object-cover" />
+          <Zoom>
+            <img src={article.bannerImage} alt={article.title.en} className="w-full h-full object-cover" />
+          </Zoom>
         </div>
 
         {/* Excerpt */}
