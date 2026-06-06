@@ -12,7 +12,7 @@ export const articles: Article[] = [
       zh: "探索这一将音乐、声乐、哑剧、舞蹈和杂技完美融合为壮丽文化综合体的戏剧艺术形式。"
     },
     category: { en: "Performing Arts", zh: "表演艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1540306443657-3a13bed58087?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/PekingOpera.webp",
     publishDate: "2023-11-01",
     readTime: "8 min read",
     sections: [
@@ -84,7 +84,7 @@ export const articles: Article[] = [
       zh: "探索中国茶制作背后深邃的哲学理念与精湛技艺，这是中华民族精神与社会结构中不可或缺的重要组成部分。"
     },
     category: { en: "Craftsmanship", zh: "传统技艺" },
-    bannerImage: "https://images.unsplash.com/photo-1576092762791-dd9e2220abd4?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/TraditionalTeaProcessingTechniques.webp",
     publishDate: "2023-11-05",
     readTime: "7 min read",
     sections: [
@@ -144,7 +144,7 @@ export const articles: Article[] = [
       zh: "走进中国书法的世界。在这里，文字书写被升华为不仅反映执行者内在精神，更展示美学修养的绝妙艺术。"
     },
     category: { en: "Visual Arts", zh: "视觉艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1549488344-1f9b8d2bd1f3?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/ChineseCalligraphy.webp",
     publishDate: "2023-11-10",
     readTime: "6 min read",
     sections: [
@@ -204,7 +204,7 @@ export const articles: Article[] = [
       zh: "探索古琴，这是一种中国传统的七弦拨弦乐器，代表了古典音乐修养与哲学表达的最高境界。"
     },
     category: { en: "Performing Arts", zh: "表演艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1558459654-c430be5b0a44?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/GuqinanditsMusic.webp",
     publishDate: "2023-11-15",
     readTime: "7 min read",
     sections: [
@@ -260,7 +260,7 @@ export const articles: Article[] = [
       zh: "深入了解中国剪纸的精致世界，这是一种使用剪刀或刻刀创作出富有表现力的图案，用于装饰、庆祝和讲故事的民间艺术。"
     },
     category: { en: "Traditional Crafts", zh: "传统手工艺" },
-    bannerImage: "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/Papercut.webp",
     publishDate: "2023-11-20",
     readTime: "5 min read",
     sections: [
@@ -316,7 +316,7 @@ export const articles: Article[] = [
       zh: "体验端午节充满活力的传统习俗，包括激动人心的赛龙舟、美味的糯米粽子以及古老的纪念活动。"
     },
     category: { en: "Social Practices", zh: "社会习俗" },
-    bannerImage: "https://images.unsplash.com/photo-1528605151594-5582fccac208?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/DragonBoatFestivalCustoms.webp",
     publishDate: "2023-11-25",
     readTime: "6 min read",
     sections: [
@@ -372,7 +372,7 @@ export const articles: Article[] = [
       zh: "探索中国皮影戏的魔幻世界，这是一种古老的讲故事形式，通过光影与制作精美的皮影人物，将观众完全吸引。"
     },
     category: { en: "Performing Arts", zh: "表演艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1596700685959-54b0bfbd1ed5?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/ShadowPuppetry.webp",
     publishDate: "2023-11-28",
     readTime: "7 min read",
     sections: [
@@ -428,7 +428,7 @@ export const articles: Article[] = [
       zh: "揭开太极拳的哲学与身体训练的面纱，这是一种以其缓慢流畅的动作、健康益处和深厚哲学根基而闻名的中国传统武术。"
     },
     category: { en: "Martial Arts", zh: "武术体系" },
-    bannerImage: "https://images.unsplash.com/photo-1509340982390-e54e4c9f1a0e?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/Taijiquan.webp",
     publishDate: "2023-12-02",
     readTime: "8 min read",
     sections: [
@@ -484,7 +484,7 @@ export const articles: Article[] = [
       zh: "步入昆曲优雅而充满诗意的世界，这是一种以其诗意的语言、优美的身段体式以及精致的音乐结构而闻名遐迩的古典中国表演艺术。"
     },
     category: { en: "Performing Arts", zh: "表演艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1541249764516-77e8a9366113?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/KunQuOpera.webp",
     publishDate: "2023-12-08",
     readTime: "9 min read",
     sections: [
@@ -596,7 +596,7 @@ export const articles: Article[] = [
       zh: "探寻榫卯结构的建筑奇迹，正是这种技艺让无数宫殿、庙宇和民居历经数百年岁月依然屹立不倒。"
     },
     category: { en: "Traditional Crafts", zh: "传统手工艺" },
-    bannerImage: "https://images.unsplash.com/photo-1542055909-541e21b02bcf?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/TraditionalChineseTimberframedArchitecture.webp",
     publishDate: "2023-12-22",
     readTime: "8 min read",
     sections: [
@@ -652,7 +652,7 @@ export const articles: Article[] = [
       zh: "了解妈祖，受人崇敬的海上守护神，她的信仰体系在全球沿海社区中结成了牢不可破的文化纽带。"
     },
     category: { en: "Social Practices", zh: "社会习俗" },
-    bannerImage: "https://images.unsplash.com/photo-1549479354-94676b1b49f9?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/MazuBeliefandCustoms.webp",
     publishDate: "2023-12-28",
     readTime: "7 min read",
     sections: [
@@ -708,7 +708,7 @@ export const articles: Article[] = [
       zh: "探索精细入微的中国篆刻艺术，这是书法与石刻的完美结合，创造出了独一无二的身份印记与审美表达。"
     },
     category: { en: "Visual Arts", zh: "视觉艺术" },
-    bannerImage: "https://images.unsplash.com/photo-1616423640778-28d1b53229bd?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/SealEngraving.webp",
     publishDate: "2024-01-05",
     readTime: "6 min read",
     sections: [
@@ -764,7 +764,7 @@ export const articles: Article[] = [
       zh: "穿越千年，体验蚕桑与丝织的绝妙工艺，正是这种传奇般的织物通过丝绸之路将东西方连接在了一起。"
     },
     category: { en: "Traditional Crafts", zh: "传统手工艺" },
-    bannerImage: "https://images.unsplash.com/photo-1600155255823-1dce45094dc1?auto=format&fit=crop&q=80&w=2000",
+    bannerImage: "/images/SericultureandSilkCraftsmanship.webp",
     publishDate: "2024-01-12",
     readTime: "8 min read",
     sections: [
