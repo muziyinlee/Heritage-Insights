@@ -1,0 +1,8 @@
+{
+  "name": "Heritage Insights - Intangible Cultural Heritage",
+  "description": "A business-oriented digital showcase dedicated to introducing and preserving the Intangible Cultural Heritage of China. Features extensive bilingual articles and detailed cultural explorations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
