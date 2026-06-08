@@ -90,13 +90,6 @@ export default function ArticleLayout() {
                   </div>
                 ))}
               </div>
-
-              {/* Insert Ad after second section for pacing */}
-              {idx === 1 && (
-                <div className="mt-12">
-                  <AdPlaceholder format="horizontal" />
-                </div>
-              )}
             </section>
           ))}
         </div>
