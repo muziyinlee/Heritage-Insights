@@ -12,7 +12,7 @@ export default function Contact() {
     const formData = new FormData(e.currentTarget);
     const subject = encodeURIComponent(`Contact from ${formData.get('name')}`);
     const body = encodeURIComponent(formData.get('message') as string);
-    window.location.href = `mailto:contact@heritageinsights.org?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:reginiadenherdervd@gmail.com?subject=${subject}&body=${body}`;
     setIsSubmitted(true);
   };
 
@@ -43,7 +43,7 @@ export default function Contact() {
               <CheckCircle2 className="w-8 h-8" />
             </motion.div>
             <h2 className="text-2xl font-bold text-slate-900 mb-2">Message Prepared</h2>
-            <p className="text-slate-600">Your default email client should have opened. If not, you can email us directly at contact@heritageinsights.org</p>
+            <p className="text-slate-600">Your default email client should have opened. If not, you can email us directly at reginiadenherdervd@gmail.com</p>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="space-y-6">
@@ -98,8 +98,8 @@ export default function Contact() {
       <div className="mt-16 text-center text-slate-500 flex flex-col items-center justify-center">
         <Mail className="w-6 h-6 mb-4 text-slate-400" />
         <p>Or email us directly at</p>
-        <a href="mailto:contact@heritageinsights.org" className="text-slate-900 font-medium hover:underline mt-1">
-          contact@heritageinsights.org
+        <a href="mailto:reginiadenherdervd@gmail.com" className="text-slate-900 font-medium hover:underline mt-1">
+          reginiadenherdervd@gmail.com
         </a>
       </div>
 
