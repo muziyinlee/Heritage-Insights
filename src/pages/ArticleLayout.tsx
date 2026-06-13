@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useParams, Navigate, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ArrowLeft } from 'lucide-react';
+import { ArrowLeft, ChevronLeft, ChevronRight } from 'lucide-react';
 import Zoom from 'react-medium-image-zoom';
 import 'react-medium-image-zoom/dist/styles.css';
 import { articles } from '../data/articles';
@@ -9,7 +9,11 @@ import AdPlaceholder from '../components/AdPlaceholder';
 
 export default function ArticleLayout() {
   const { id } = useParams<{ id: string }>();
-  const article = articles.find(a => a.id === id);
+  const currentIndex = articles.findIndex(a => a.id === id);
+  const article = articles[currentIndex];
+
+  const prevArticle = currentIndex > 0 ? articles[currentIndex - 1] : null;
+  const nextArticle = currentIndex < articles.length - 1 ? articles[currentIndex + 1] : null;
 
   // Scroll to top on load
   useEffect(() => {
@@ -94,8 +98,33 @@ export default function ArticleLayout() {
           ))}
         </div>
 
+        {/* Article Navigation */}
+        <div className="mt-16 pt-8 border-t border-slate-200 grid grid-cols-1 md:grid-cols-2 gap-6">
+          {prevArticle ? (
+            <Link to={`/article/${prevArticle.id}`} className="group flex flex-col items-start p-4 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all bg-white hover:bg-slate-50">
+              <div className="flex items-center text-sm font-medium text-slate-500 mb-2 group-hover:text-slate-900 transition-colors">
+                <ChevronLeft className="w-4 h-4 mr-1" />
+                Previous / 上一篇
+              </div>
+              <div className="font-semibold text-slate-900 line-clamp-1">{prevArticle.title.en}</div>
+              <div className="text-sm font-serif text-slate-600 line-clamp-1 mt-1">{prevArticle.title.zh}</div>
+            </Link>
+          ) : <div></div>}
+
+          {nextArticle ? (
+            <Link to={`/article/${nextArticle.id}`} className="group flex flex-col items-end text-right p-4 rounded-xl border border-slate-200 hover:border-slate-300 hover:shadow-sm transition-all bg-white hover:bg-slate-50">
+              <div className="flex items-center justify-end text-sm font-medium text-slate-500 mb-2 group-hover:text-slate-900 transition-colors">
+                Next / 下一篇
+                <ChevronRight className="w-4 h-4 ml-1" />
+              </div>
+              <div className="font-semibold text-slate-900 line-clamp-1">{nextArticle.title.en}</div>
+              <div className="text-sm font-serif text-slate-600 line-clamp-1 mt-1">{nextArticle.title.zh}</div>
+            </Link>
+          ) : <div></div>}
+        </div>
+
         {/* End of article Ad Placeholder */}
-        <div className="mt-16 pt-8 border-t border-slate-200">
+        <div className="mt-12">
           <AdPlaceholder format="horizontal" />
         </div>
 
